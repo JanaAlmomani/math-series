@@ -37,8 +37,8 @@ def test_lucas_two():
 
 
 def test_sum_series():
-    actual=sum_series(3)
-    expected=2
+    actual=sum_series(3,2,1)
+    expected=4
     assert actual == expected
 
 def test_sum_series_one():
@@ -46,8 +46,18 @@ def test_sum_series_one():
     expected=1
     assert actual == expected
 
-def test_sum_series_two():
-    actual=sum_series(4)
+def test_sum_series_one2():
+    actual=sum_series(4,0,1)
     expected=3
     assert actual == expected
 
+
+def test_sum_series_two():
+    actual=sum_series(5,2,1)
+    expected=11
+    assert actual == expected
+
+def test_sum_series_three():
+    actual=sum_series(5,4,3)
+    expected=27
+    assert actual == expected
